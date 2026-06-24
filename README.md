@@ -70,7 +70,7 @@ Data flow:
 ## APIs Used
 
 - Characters: `https://rickandmortyapi.com/api/character`
-- Facts/Quotes feed: `https://catfact.ninja/facts?limit=10`
+- Facts feed (temporary placeholder source): `https://catfact.ninja/facts?limit=10`
 
 ## Getting Started
 
@@ -103,7 +103,7 @@ flutter test
 
 - Add dedicated project screenshots for home/details/search flows
 - Add pagination or lazy loading for character data
-- Improve quote source matching per character
+- Replace placeholder facts API with a character-themed quotes/facts source
 - Add unit and widget tests for Cubit and UI states
 
 ## Repository Structure
