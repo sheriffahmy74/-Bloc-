@@ -1,118 +1,119 @@
-# Flutter Breaking
+# Rick and Morty Characters App
 
+<p align="left">
+  <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
+  <img src="https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white" alt="Dart" />
+  <img src="https://img.shields.io/badge/BLoC%2FCubit-5A2FC2?style=for-the-badge&logo=flutter&logoColor=white" alt="Cubit" />
+  <img src="https://img.shields.io/badge/REST%20API-0A66C2?style=for-the-badge&logo=postman&logoColor=white" alt="REST API" />
+</p>
 
+A portfolio-ready Flutter application that fetches and displays Rick and Morty characters with search, detailed profiles, and animated facts. The project is structured with clear architecture and state management to reflect production-style mobile development.
 
-A Flutter application that displays characters in a searchable grid, opens a detailed profile page, and shows animated random facts/quotes. The app follows a clear layered architecture with `Cubit` state management, repository abstraction, and API-driven data.
+## Project Overview
 
-## Overview
+### Problem
+Build a responsive, API-driven mobile app that handles async data, user search, loading states, and network interruptions in a clean and maintainable way.
 
-This project demonstrates:
-
-- Clean separation between UI, business logic, and data layers.
-- Asynchronous API integration using `Dio`.
-- Reactive UI updates via `flutter_bloc` (`Cubit`).
-- Offline-awareness using `flutter_offline`.
-- Smooth UI interactions (Hero animation and animated text).
+### Solution
+Implemented a layered Flutter app using Cubit (`flutter_bloc`) with a repository + web service data flow, clear route handling, and an engaging UI experience.
 
 ## Key Features
 
-- Character listing in a responsive 2-column grid.
-- Real-time character search (prefix-based filtering).
-- Character details screen with Hero transition.
-- Animated random quote/fact rendering.
-- Loading and no-internet states for better UX.
+- Responsive 2-column character grid
+- Real-time character name search
+- Character details page with Hero animation
+- Animated random facts/quotes
+- Offline-aware UI with clear no-internet state
+- Loading indicators for improved UX feedback
 
 ## Tech Stack
 
-- **Framework**: Flutter (Dart)
-- **State Management**: `flutter_bloc` (Cubit)
-- **Networking**: `dio`
-- **Connectivity**: `flutter_offline`
-- **Text Animation**: `animated_text_kit`
-- **Linting**: `flutter_lints`
+### Mobile Development
+- Flutter
+- Dart
+
+### State Management
+- flutter_bloc (Cubit)
+
+### Backend Integration
+- REST API consumption with Dio
+
+### Tools & Libraries
+- flutter_offline
+- animated_text_kit
+- flutter_lints
+
+## Screenshots
+
+| State | Preview |
+|---|---|
+| Loading | ![Loading](Assets/images/Loading.gif) |
+| Offline | ![Offline](Assets/images/off.png) |
+| Placeholder | ![Placeholder](Assets/images/replachold.png) |
 
 ## Architecture
 
-The codebase is organized into three main layers:
+The app follows a simple layered structure:
 
-- **Presentation**: screens and reusable widgets.
-- **Business Logic**: Cubit + states for application flow.
-- **Data**: models, repository, and web services.
+- **Presentation**: screens and widgets
+- **Business Logic**: Cubit + states
+- **Data**: repository, models, and web services
 
 Data flow:
-
-1. UI triggers Cubit actions.
-2. Cubit requests data from Repository.
-3. Repository calls Web Service and maps responses into Models.
-4. Cubit emits states to rebuild UI.
+1. UI triggers Cubit method
+2. Cubit requests data from repository
+3. Repository fetches API data via web service
+4. Cubit emits states to update UI
 
 ## APIs Used
 
-- Characters API: `https://rickandmortyapi.com/api/character`
-- Quotes/Facts API currently used in details: `https://catfact.ninja/facts?limit=10`
-
-## Project Structure
-
-```text
-lib/
-	main.dart
-	app_router.dart
-	Business_logic/
-		cubit/
-			characters_cubit.dart
-			characters_state.dart
-	Data/
-		models/
-			charcters.dart
-			quote.dart
-		repositry/
-			characters_repositry.dart
-		web_servics/
-			characters_web_services.dart
-	Presentation/
-		screens/
-			characcters_screen.dart
-			characters_detalis_Screen.dart
-		widgets/
-			character_Item.dart
-	constants/
-		strings.dart
-		mycolors.dart
-Assets/
-	images/
-		Loading.gif
-		off.png
-		replachold.png
-```
-
-## Routing
-
-- `/` → Characters screen
-- `/characterDetails` → Character details screen
+- Characters: `https://rickandmortyapi.com/api/character`
+- Facts feed (currently generic): `https://catfact.ninja/facts?limit=10`
+- Planned replacement source: character-themed quotes/facts API to align with Rick and Morty context
 
 ## Getting Started
 
 ### Prerequisites
 
 - Flutter SDK
-- Dart SDK compatible with `^3.9.2`
-- Any supported target device/emulator (Android, iOS, web, desktop)
+- Dart SDK `^3.9.2`
+- Android Studio / VS Code + emulator or real device
 
-### Run Locally
+### Installation
 
 ```bash
 flutter pub get
+```
+
+### Run
+
+```bash
 flutter run
 ```
 
-### Analyze and Test
+### Static Analysis & Tests
 
 ```bash
 flutter analyze
 flutter test
 ```
 
-## Notes
+## Future Improvements
 
-- The repository currently keeps original file/class naming from the existing codebase.
-- The default generated widget test may require adaptation to the current app UI.
+- Add dedicated project screenshots for home/details/search flows
+- Add pagination or lazy loading for character data
+- Replace placeholder facts API with a character-themed quotes/facts source
+- Add unit and widget tests for Cubit and UI states
+
+## Repository Structure
+
+```text
+lib/
+  Business_logic/
+  Data/
+  Presentation/
+  constants/
+  app_router.dart
+  main.dart
+Assets/images/
+```
