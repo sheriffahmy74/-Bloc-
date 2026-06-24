@@ -45,7 +45,7 @@ I enjoy transforming ideas into polished products with modern architecture, API 
 
 ## 🚀 Featured Project
 
-### [Breaking Bad Characters App](https://github.com/sheriffahmy74/-Bloc-)
+### [Rick and Morty Characters App](https://github.com/sheriffahmy74/-Bloc-)
 
 **Problem:** Need a robust mobile app that consumes external APIs, manages state cleanly, and provides smooth UX even with connectivity changes.  
 **Solution:** Built a Flutter app with Cubit state management, repository pattern, and API-driven dynamic content.  

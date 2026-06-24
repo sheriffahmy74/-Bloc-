@@ -1,4 +1,4 @@
-# Breaking Bad Characters App
+# Rick and Morty Characters App
 
 <p align="left">
   <img src="https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white" alt="Flutter" />
@@ -7,7 +7,7 @@
   <img src="https://img.shields.io/badge/REST%20API-0A66C2?style=for-the-badge&logo=postman&logoColor=white" alt="REST API" />
 </p>
 
-A portfolio-ready Flutter application that fetches and displays Breaking Bad characters with search, detailed profiles, and animated facts. The project is structured with clear architecture and state management to reflect production-style mobile development.
+A portfolio-ready Flutter application that fetches and displays Rick and Morty characters with search, detailed profiles, and animated facts. The project is structured with clear architecture and state management to reflect production-style mobile development.
 
 ## Project Overview
 
