@@ -45,8 +45,6 @@ Implemented a layered Flutter app using Cubit (`flutter_bloc`) with a repository
 
 ## Screenshots
 
-> Replace or extend these with app screenshots from device/emulator captures.
-
 | State | Preview |
 |---|---|
 | Loading | ![Loading](Assets/images/Loading.gif) |
@@ -70,7 +68,8 @@ Data flow:
 ## APIs Used
 
 - Characters: `https://rickandmortyapi.com/api/character`
-- Facts feed (temporary placeholder source): `https://catfact.ninja/facts?limit=10`
+- Facts feed (currently generic): `https://catfact.ninja/facts?limit=10`
+- Planned replacement source: character-themed quotes/facts API to align with Rick and Morty context
 
 ## Getting Started
 
