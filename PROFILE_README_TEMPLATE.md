@@ -69,9 +69,9 @@ I enjoy transforming ideas into polished products with modern architecture, API 
 
 ## 🤝 Contact & Socials
 
-- LinkedIn: Add your LinkedIn profile URL
-- Portfolio: Add your portfolio URL
-- Email: Add your professional email
+- LinkedIn: [Your Name](https://linkedin.com/in/your-username)
+- Portfolio: [yourportfolio.com](https://yourportfolio.com)
+- Email: yourname@email.com
 
 ---
 
